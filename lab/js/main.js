@@ -130,19 +130,19 @@ var featureGroup;
 
 var myStyle = function(feature) {
   if (feature.properties.COLLDAY == "MON")
-  {return {fillColor: 'red'};}
+  {return {fillColor: '#8DD3C7'};}
   else if (feature.properties.COLLDAY == "TUE")
-  {return {fillColor: 'yellow'};}
+  {return {fillColor: '#FFFFB3'};}
   else if (feature.properties.COLLDAY == "WED")
-  {return {fillColor: 'green'};}
+  {return {fillColor: '#BEBADA'};}
   else if (feature.properties.COLLDAY == "THU")
-  {return {fillColor: 'yellow'};}
+  {return {fillColor: '#FB8072'};}
   else if (feature.properties.COLLDAY == "FRI")
-  {return {fillColor: 'blue'};}
+  {return {fillColor: '#80B1D3'};}
   else if (feature.properties.COLLDAY == "SAT")
-  {return {fillColor: 'white'};}
+  {return {fillColor: '#42C5F4'};}
   else if (feature.properties.COLLDAY == "SUN")
-  {return {fillColor: 'brown'};}
+  {return {fillColor: '#AF974D'};}
 };
 
 var showResults = function() {
@@ -176,7 +176,7 @@ var eachFeatureFunction = function(layer) {
     if (layer.feature.properties.COLLDAY == "SUN") {weekday = "Sunday";}
     $(".day-of-week").text(weekday);
     console.log(layer.feature);
-    showResults();i
+    showResults();
   });
 };
 
